@@ -23,7 +23,7 @@
             </label>
             <input
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                name="email" id="email" type="text" placeholder="Email">
+                name="email" id="email" type="emailg" placeholder="Email">
         </div>
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
@@ -31,7 +31,7 @@
             </label>
             <input
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                name="password" id="password" type="text" placeholder="Password">
+                name="password" id="password" type="password" placeholder="Password">
         </div>
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="password_confirmation">
@@ -39,7 +39,7 @@
             </label>
             <input
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                name="password_confirmation" id="password_confirmation" type="text" placeholder="Password Confirm">
+                name="password_confirmation" id="password_confirmation" type="password" placeholder="Password Confirm">
         </div>
         <div class="flex items-center justify-between">
             <button
