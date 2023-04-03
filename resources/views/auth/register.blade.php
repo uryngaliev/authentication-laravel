@@ -11,6 +11,9 @@
                 <input
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     name="name" id="name" type="text" placeholder="Name">
+                @error('name')
+                <p class="text-red-500">{{$message}}</p>
+                @enderror
             </div>
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
@@ -19,6 +22,9 @@
                 <input
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     name="email" id="email" type="email" placeholder="Email">
+                @error('email')
+                <p class="text-red-500">{{$message}}</p>
+                @enderror
             </div>
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
@@ -27,6 +33,9 @@
                 <input
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     name="password" id="password" type="password" placeholder="Password">
+                @error('password')
+                <p class="text-red-500">{{$message}}</p>
+                @enderror
             </div>
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="password_confirmation">
@@ -36,6 +45,9 @@
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     name="password_confirmation" id="password_confirmation" type="password"
                     placeholder="Password Confirm">
+                @error('password_confirmation')
+                <p class="text-red-500">{{$message}}</p>
+                @enderror
             </div>
             <div class="flex items-center justify-between">
                 <button
