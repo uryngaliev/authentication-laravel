@@ -6,7 +6,19 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-<div class="w-full max-w-xs mx-auto mt-8">
+<header class="py-8 text-lg bg-[#111827]">
+    <div class="container mx-auto px-4">
+        <nav class="flex items-center justify-between">
+            <div>
+                <a class="text-white text-xl" href="{{route('home')}}">Logo</a>
+            </div>
+            <div>
+                <a class="bg-blue-700 text-white py-2 px-6 rounded-xl" href="{{route('register')}}">Sign in</a>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="bg-w-full max-w-xs mx-auto mt-8">
     <form action="{{route('store')}}" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         @csrf
         <div class="mb-4">
@@ -23,7 +35,7 @@
             </label>
             <input
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                name="email" id="email" type="emailg" placeholder="Email">
+                name="email" id="email" type="email" placeholder="Email">
         </div>
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
@@ -43,7 +55,7 @@
         </div>
         <div class="flex items-center justify-between">
             <button
-                class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                class="w-full bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit">
                 Sign In
             </button>

@@ -6,8 +6,17 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-</h1>
+<header class="py-8 text-lg bg-[#111827]">
+    <div class="container mx-auto px-4">
+        <nav class="flex items-center justify-between">
+            <div>
+                <a class="text-white text-xl" href="{{route('home')}}">Logo</a>
+            </div>
+            <div>
+                <a class="bg-blue-700 text-white py-2 px-6 rounded-xl" href="{{route('register')}}">Sign in</a>
+            </div>
+        </nav>
+    </div>
+</header>
 </body>
 </html>
