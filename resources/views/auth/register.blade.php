@@ -9,7 +9,7 @@
                     Name
                 </label>
                 <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="{{$errors->has('name') ? 'placeholder-red-400 border-red-400' : ''}} shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     name="name" id="name" type="text" placeholder="Name">
                 @error('name')
                 <p class="text-red-500">{{$message}}</p>
@@ -20,7 +20,7 @@
                     Email
                 </label>
                 <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="{{$errors->has('email') ? 'placeholder-red-400 border-red-400' : ''}} shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     name="email" id="email" type="email" placeholder="Email">
                 @error('email')
                 <p class="text-red-500">{{$message}}</p>
@@ -31,7 +31,7 @@
                     Password
                 </label>
                 <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="{{$errors->has('password' ? 'placeholder-red-400' : '')}} shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     name="password" id="password" type="password" placeholder="Password">
                 @error('password')
                 <p class="text-red-500">{{$message}}</p>
@@ -42,7 +42,7 @@
                     Password Confirm
                 </label>
                 <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="{{$errors->has('password_confirmation' ? 'placeholder-red-400 border-red-400' : '')}} shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     name="password_confirmation" id="password_confirmation" type="password"
                     placeholder="Password Confirm">
                 @error('password_confirmation')
