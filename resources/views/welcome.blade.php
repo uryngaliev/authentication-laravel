@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title')</title>
+    <title>Главная</title>
     @vite('resources/css/app.css')
 </head>
 <body>
@@ -19,6 +19,8 @@
         </nav>
     </div>
 </header>
-@yield('content')
 </body>
 </html>
+
+
+
