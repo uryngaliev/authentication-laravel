@@ -14,11 +14,12 @@
                 <a class="text-white text-xl" href="{{route('home')}}">Logo</a>
             </div>
             <div>
-                <a class="bg-blue-700 text-white py-2 px-6 rounded-xl" href="#">Log out</a>
+                <a class="bg-blue-700 text-white py-2 px-6 rounded-xl" href="{{route('logout')}}">Log out</a>
             </div>
         </nav>
     </div>
 </header>
+<h1 class="text-2xl font-bold"></h1>
 </body>
 </html>
 

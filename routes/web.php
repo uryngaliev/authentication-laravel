@@ -23,5 +23,6 @@ Route::post('/register', [RegisterController::class, 'register'])->middleware('g
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->middleware('guest')->name('login');
 Route::post('/login', [LoginController::class, 'login'])->middleware('guest')->name('store.login');
+Route::get('/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
 
-Route::view('/dashboard', 'dashboard')->middleware('auth');
+Route::view('/dashboard', 'dashboard')->middleware('auth')->name('dashboard');

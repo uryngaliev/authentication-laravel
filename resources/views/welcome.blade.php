@@ -13,12 +13,18 @@
             <div>
                 <a class="text-white text-xl" href="{{route('home')}}">Logo</a>
             </div>
-            <div>
-                <a class="bg-blue-700 text-white py-2 px-6 rounded-xl" href="{{route('register')}}">Sign in</a>
+            <div class="flex gap-8">
+                <a class="bg-blue-700 hover:bg-blue-900  text-white py-2 px-6 rounded-xl" href="{{route('login')}}">Sign
+                    Up</a>
+                <a class="bg-blue-700 hover:bg-blue-900  text-white py-2 px-6 rounded-xl" href="{{route('register')}}">Sign
+                    in</a>
             </div>
         </nav>
     </div>
 </header>
+<h1 class="text-3xl font-bold">
+    Главная
+</h1>
 </body>
 </html>
 
